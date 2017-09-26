@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	h1= title
+	hr
+	h2.desc Choose a file
+	form(action='/upload' method='post' enctype='multipart/form-data' )
+		//- label(for='file')
+		//- br 
+		input(type='file', id='file' name="file")
+		input(type='submit')
